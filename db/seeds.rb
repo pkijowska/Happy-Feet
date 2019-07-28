@@ -48,14 +48,14 @@ a15 = Animal.create :name => 'Vanessa', :age => 4, :image => '/assets/cutecat.jp
 #
 #
 #
-# Category.destroy_all
-# puts "Creating categories"
-#
-# c1 = Category.create :name => 'pig'
-# c2 = Category.create :name => 'hamster'
-# c3 = Category.create :name => 'dog'
-# c4 = Category.create :name => 'cat'
-#
+Category.destroy_all
+puts "Creating categories"
+
+c1 = Category.create :name => 'Pigs'
+c2 = Category.create :name => 'Hamsters'
+c3 = Category.create :name => 'Dogs'
+c4 = Category.create :name => 'Cats'
+
 # Favourite.destroy_all
 # puts "Creating favourites"
 #

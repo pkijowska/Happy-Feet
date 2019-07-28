@@ -17,6 +17,7 @@
         <% if @current_user.admin? %>
           <%= link_to "All users", users_path %>
             <%= link_to "All animals", animals_path %>
+        
         <% end %>
         <%= link_to "Logout #{ @current_user.email }", login_path, :method => 'delete' %>
       <% else %>

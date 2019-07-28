@@ -1,13 +1,10 @@
 # == Route Map
 #
 #                    Prefix Verb   URI Pattern                                                                              Controller#Action
-#             animals_index GET    /animals/index(.:format)                                                                 animals#index
-#               animals_new GET    /animals/new(.:format)                                                                   animals#new
-#              animals_edit GET    /animals/edit(.:format)                                                                  animals#edit
-#              animals_show GET    /animals/show(.:format)                                                                  animals#show
-#               session_new GET    /session/new(.:format)                                                                   session#new
-#                pages_home GET    /pages/home(.:format)                                                                    pages#home
-#                 users_new GET    /users/new(.:format)                                                                     users#new
+#          categories_index GET    /categories/index(.:format)                                                              categories#index
+#            categories_new GET    /categories/new(.:format)                                                                categories#new
+#           categories_edit GET    /categories/edit(.:format)                                                               categories#edit
+#           categories_show GET    /categories/show(.:format)                                                               categories#show
 #                      root GET    /                                                                                        pages#home
 #                     users GET    /users(.:format)                                                                         users#index
 #                           POST   /users(.:format)                                                                         users#create
@@ -18,6 +15,14 @@
 #                     login GET    /login(.:format)                                                                         session#new
 #                           POST   /login(.:format)                                                                         session#create
 #                           DELETE /login(.:format)                                                                         session#destroy
+#                   animals GET    /animals(.:format)                                                                       animals#index
+#                           POST   /animals(.:format)                                                                       animals#create
+#                new_animal GET    /animals/new(.:format)                                                                   animals#new
+#               edit_animal GET    /animals/:id/edit(.:format)                                                              animals#edit
+#                    animal GET    /animals/:id(.:format)                                                                   animals#show
+#                           PATCH  /animals/:id(.:format)                                                                   animals#update
+#                           PUT    /animals/:id(.:format)                                                                   animals#update
+#                           DELETE /animals/:id(.:format)                                                                   animals#destroy
 #        rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
 # rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
 #        rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
@@ -26,6 +31,10 @@
 
 Rails.application.routes.draw do
 
+  get 'categories/index'
+  get 'categories/new'
+  get 'categories/edit'
+  get 'categories/show'
 root :to => 'pages#home'
 resources :users, :only => [:new, :create, :update, :index]
   get '/users/edit' => 'users#edit', :as => :edit_user
