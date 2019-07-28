@@ -4,11 +4,13 @@ class AnimalsController < ApplicationController
   end
 
   def new
+    @animal = Animal.new
   end
 
   def edit
   end
 
   def show
+      @animal = Animal.find params[:id]
   end
 end

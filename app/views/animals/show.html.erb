@@ -1,3 +1,14 @@
 
 
 <h1> <%= @animal.name %></h1>
+
+<%= image_tag @animal.image, :alt => @animal.name, :class => 'feature'  %>
+
+<ul>
+
+   <li>Age: <%= @animal.age  %> </li>
+   <li>Her story: <%= @animal.story  %></li>
+
+
+
+</ul>
