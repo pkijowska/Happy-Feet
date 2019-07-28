@@ -78,12 +78,12 @@ c4 = Category.create :name => 'Cats'
 #
 #
 #
-# puts "Associations"
+puts "Associations"
 # #category and animals
-# c1.animals << a1 << a2 << a3 << a4 << a5
-# c2.animals << a6 << a7
-# c3.animals << a8 << a9 << a10 << a11 << a12
-# c4.animals << a13 << a14 << a15
+c1.animals << a1 << a2 << a3 << a4 << a5
+c2.animals << a6 << a7
+c3.animals << a8 << a9 << a10 << a11 << a12
+c4.animals << a13 << a14 << a15
 #
 #
 # #users and favourites

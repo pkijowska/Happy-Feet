@@ -31,10 +31,6 @@
 
 Rails.application.routes.draw do
 
-  get 'categories/index'
-  get 'categories/new'
-  get 'categories/edit'
-  get 'categories/show'
 root :to => 'pages#home'
 resources :users, :only => [:new, :create, :update, :index]
   get '/users/edit' => 'users#edit', :as => :edit_user
@@ -42,5 +38,9 @@ resources :users, :only => [:new, :create, :update, :index]
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
+
   resources :animals
+  resources :categories
+  # resources :categories_show_path, :path => "/Pigs"
+
 end

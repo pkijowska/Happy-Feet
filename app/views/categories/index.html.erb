@@ -1,2 +1,9 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<h1> All categories </h1>
+<% @category.animals.each do |category| %>
+
+
+ <li> <%= link_to image_tag(animal.image, :class => 'thumb'), animal %>
+
+
+
+<% end %>

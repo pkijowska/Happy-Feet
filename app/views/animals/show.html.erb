@@ -1,4 +1,4 @@
-
+<h1> All categories </h1>
 
 <h1> <%= @animal.name %></h1>
 
@@ -6,6 +6,9 @@
 
 <ul>
 
+  <% if @animal.category.present? %>
+  <li> <%= link_to @animal.category.name, @animal.category %> </li>
+<% end %>
    <li>Age: <%= @animal.age  %> </li>
    <li>Her story: <%= @animal.story  %></li>
 </ul>
