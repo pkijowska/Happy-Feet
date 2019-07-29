@@ -12,5 +12,14 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
+//= require jquery
 //= require_tree .
+$(document).ready(function() {
+$('#favForm').click(function () {
+$("#fav").text("you have a new favourte: ")
+$(this).attr("src", "/assets/icons8.png");
+});
+
+
+
+});

@@ -1,8 +1,8 @@
 User.destroy_all
 puts "Creating users"
 
-u1 = User.create :email => 'poli7sh@gmail.com', :password => 'chicken', :admin => true
-u2 = User.create :email => 'p.kijowska@gmail.com', :password => 'chicken1'
+u1 = User.create :name => 'Paulina', :email => 'poli7sh@gmail.com', :password => 'chicken', :admin => true
+u2 = User.create :name => 'Paulina', :email => 'p.kijowska@gmail.com', :password => 'chicken1'
 
 puts "Creating animals"
 #
@@ -59,7 +59,7 @@ c4 = Category.create :name => 'Cats'
 Favourite.destroy_all
 puts "Creating favourites"
 
-f1 = Favourite.create
+f1 = Favourite.create 
 f2 = Favourite.create
 f3 = Favourite.create
 f4 = Favourite.create
@@ -84,8 +84,8 @@ c1.animals << a1 << a2 << a3 << a4 << a5
 c2.animals << a6 << a7
 c3.animals << a8 << a9 << a10 << a11 << a12
 c4.animals << a13 << a14 << a15
-#
-#
+
+
 # #users and favourites
-u1.favourites << f1 << f5
-u2.favourites  << f2
+u1.favourites << f1
+u2.favourites  << f1

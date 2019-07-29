@@ -13,8 +13,16 @@
    <li>Her story: <%= @animal.story  %></li>
 </ul>
 
+<!-- <img src="/assets/icons8.png" alt="heart"> -->
+<input type="image" src="/assets/icons8-blue.png" name="heart" class="btTxtfav" id="favForm"/>
+<p id="fav"></p>
+
+
+
 <div class="controls">
 <%= link_to "Edit animals", edit_animal_path(@animal)  %>
   <%= link_to "Delete animal", @animal, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+
+
 
 </div>

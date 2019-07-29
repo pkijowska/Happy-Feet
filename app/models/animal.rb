@@ -15,4 +15,5 @@
 class Animal < ApplicationRecord
   belongs_to :category, :optional => true
   has_many :favourites
+  has_many :users, through: :favourites
 end

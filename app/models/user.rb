@@ -14,12 +14,16 @@
 #
 
 class User < ApplicationRecord
-  has_many :favourites
   has_secure_password
+  validates :email, :presence => true, :uniqueness => true
+  has_many :favourites
+  has_many :animals, through: :favourites
+
+
 
 
 #Validations -- see the Rails Guide
-validates :email, :presence => true, :uniqueness => true
-has_many :mixtapes
+
+
 
 end
