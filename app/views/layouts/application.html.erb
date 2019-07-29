@@ -10,15 +10,16 @@
   </head>
 
 <nav>
+
     <%= link_to "Home", root_path %>
 <% if @current_user.present? %>
 <%= link_to "Edit profile", edit_user_path %>
   <%= link_to "All animals", animals_path %>
-    <%= link_to "All Categories", categories_index_path %>
+    <%= link_to "All Categories", categories_path %>
         <% if @current_user.admin? %>
           <%= link_to "All users", users_path %>
             <%= link_to "All animals", animals_path %>
-  <%= link_to "All Categories", categories_index_path %>
+  <%= link_to "All Categories", categories_path %>
         <% end %>
         <%= link_to "Logout #{ @current_user.email }", login_path, :method => 'delete' %>
       <% else %>
@@ -26,8 +27,12 @@
         <%= link_to "Sign in", login_path %>
         <%= link_to "All animals", animals_path %>
           <%= link_to "All Categories", categories_path %>
-      <% end %>
 
+
+
+
+      <% end %>
+<%# moving cat here %>
 </nav>
 
   <body>

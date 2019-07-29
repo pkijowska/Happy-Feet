@@ -41,6 +41,7 @@ resources :users, :only => [:new, :create, :update, :index]
 
   resources :animals
   resources :categories
+    resources :favourites
   # resources :categories_show_path, :path => "/Pigs"
 
 end

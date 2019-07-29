@@ -56,25 +56,25 @@ c2 = Category.create :name => 'Hamsters'
 c3 = Category.create :name => 'Dogs'
 c4 = Category.create :name => 'Cats'
 
-# Favourite.destroy_all
-# puts "Creating favourites"
-#
-# f1 = Favourite.create
-# f2 = Favourite.create
-# f3 = Favourite.create
-# f4 = Favourite.create
-# f5 = Favourite.create
-# f6 = Favourite.create
-# f7 = Favourite.create
-# f8 = Favourite.create
-# f9 = Favourite.create
-# f10 = Favourite.create
-# f11 = Favourite.create
-# f12 = Favourite.create
-# f13 = Favourite.create
-# f14 = Favourite.create
-# f15 = Favourite.create
-#
+Favourite.destroy_all
+puts "Creating favourites"
+
+f1 = Favourite.create
+f2 = Favourite.create
+f3 = Favourite.create
+f4 = Favourite.create
+f5 = Favourite.create
+f6 = Favourite.create
+f7 = Favourite.create
+f8 = Favourite.create
+f9 = Favourite.create
+f10 = Favourite.create
+f11 = Favourite.create
+f12 = Favourite.create
+f13 = Favourite.create
+f14 = Favourite.create
+f15 = Favourite.create
+
 #
 #
 #
@@ -87,5 +87,5 @@ c4.animals << a13 << a14 << a15
 #
 #
 # #users and favourites
-# u1.favourites << f1 << f5
-# u2.favourites  << f2
+u1.favourites << f1 << f5
+u2.favourites  << f2
