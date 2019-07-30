@@ -1,5 +1,10 @@
-<h1>New User</h1>
-
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-7 col-md-offset-2">
+            <h1 class="text-center login-title">Sign up for Happy Feet!</h1>
+            <div class="account-wall">
+                <img class="profile-img" src="https://media.giphy.com/media/uk3IyT1ltbEZdE4HHZ/giphy.gif"
+                    alt="" class="">
 <% if @user.errors.any? %>
   <ol>
     <% @user.errors.full_messages.each do |message| %>
@@ -9,14 +14,25 @@
 <% end %>
 
 <%= form_for @user do |f| %>
+<div class="form-signin">
+<div class="wrap-input100 validate-input">
+   <div class="form-group">
   <%= f.label :email %>
   <%= f.email_field :email %>
-
+  <span class="focus-input100-1"></span>
+        <span class="focus-input100-2"></span>
+      </div>
+ </div>
   <%= f.label :password %>
   <%= f.password_field :password %>
 
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %>
-
-  <%= f.submit "Sign up!" %>
+</div>
+ <div class="container-login100-form-btn m-t-20">
+  <%= f.submit "Sign up!", :class => "btn btn-lg btn-primary btn-block"  %>
 <% end %>
+</div>
+</div>
+   </div>
+</div>

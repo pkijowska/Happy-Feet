@@ -7,6 +7,10 @@ Hello
 
 <h1>These are your favourites ...</h1>
 
-<% @user.animals.each do |f| %>
+<% @favourites.each do |f| %>
 <%= image_tag f.image %>
+
 <% end %>
+
+
+<%# button to unfavourite %>

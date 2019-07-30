@@ -3,6 +3,7 @@ puts "Creating users"
 
 u1 = User.create :name => 'Paulina', :email => 'poli7sh@gmail.com', :password => 'chicken', :admin => true
 u2 = User.create :name => 'Paulina', :email => 'p.kijowska@gmail.com', :password => 'chicken1'
+u3 = User.create :name => 'Natalia', :email => 'p.na@gmail.com', :password => 'chicken'
 
 puts "Creating animals"
 #

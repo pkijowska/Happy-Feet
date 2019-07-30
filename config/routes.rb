@@ -1,10 +1,6 @@
 # == Route Map
 #
 #                    Prefix Verb   URI Pattern                                                                              Controller#Action
-#          favourites_index GET    /favourites/index(.:format)                                                              favourites#index
-#            favourites_new GET    /favourites/new(.:format)                                                                favourites#new
-#           favourites_edit GET    /favourites/edit(.:format)                                                               favourites#edit
-#           favourites_show GET    /favourites/show(.:format)                                                               favourites#show
 #                      root GET    /                                                                                        pages#home
 #                     users GET    /users(.:format)                                                                         users#index
 #                           POST   /users(.:format)                                                                         users#create
@@ -15,6 +11,15 @@
 #                     login GET    /login(.:format)                                                                         session#new
 #                           POST   /login(.:format)                                                                         session#create
 #                           DELETE /login(.:format)                                                                         session#destroy
+#                           GET    /users/:id(.:format)                                                                     users#show
+#         animal_favourites GET    /animals/:animal_id/favourites(.:format)                                                 favourites#index
+#                           POST   /animals/:animal_id/favourites(.:format)                                                 favourites#create
+#      new_animal_favourite GET    /animals/:animal_id/favourites/new(.:format)                                             favourites#new
+#     edit_animal_favourite GET    /animals/:animal_id/favourites/:id/edit(.:format)                                        favourites#edit
+#          animal_favourite GET    /animals/:animal_id/favourites/:id(.:format)                                             favourites#show
+#                           PATCH  /animals/:animal_id/favourites/:id(.:format)                                             favourites#update
+#                           PUT    /animals/:animal_id/favourites/:id(.:format)                                             favourites#update
+#                           DELETE /animals/:animal_id/favourites/:id(.:format)                                             favourites#destroy
 #                   animals GET    /animals(.:format)                                                                       animals#index
 #                           POST   /animals(.:format)                                                                       animals#create
 #                new_animal GET    /animals/new(.:format)                                                                   animals#new
@@ -31,14 +36,6 @@
 #                           PATCH  /categories/:id(.:format)                                                                categories#update
 #                           PUT    /categories/:id(.:format)                                                                categories#update
 #                           DELETE /categories/:id(.:format)                                                                categories#destroy
-#                favourites GET    /favourites(.:format)                                                                    favourites#index
-#                           POST   /favourites(.:format)                                                                    favourites#create
-#             new_favourite GET    /favourites/new(.:format)                                                                favourites#new
-#            edit_favourite GET    /favourites/:id/edit(.:format)                                                           favourites#edit
-#                 favourite GET    /favourites/:id(.:format)                                                                favourites#show
-#                           PATCH  /favourites/:id(.:format)                                                                favourites#update
-#                           PUT    /favourites/:id(.:format)                                                                favourites#update
-#                           DELETE /favourites/:id(.:format)                                                                favourites#destroy
 #        rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
 # rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
 #        rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
@@ -56,9 +53,10 @@ post '/login' => 'session#create'
 delete '/login' => 'session#destroy'
 # get '/users/:id', to: 'users#show', as: 'users_show'
 get 'users/:id', to: 'users#show'
-resources :animals
-resources :categories
+resources :animals do
   resources :favourites
+end
+resources :categories
 
 
 

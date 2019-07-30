@@ -1,18 +1,38 @@
 
-<h1>Log in</h1>
-
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-7 col-md-offset-2">
+<h1 class="text-center login-title">Sign in to continue to "Happy feet"</h1>
+<div class="account-wall">
+<img class="profile-img" src="https://media.giphy.com/media/yNf93oO058Id1mOs7K/giphy.gif"
+alt="" class="">
 <p>
   <%= flash[:error_message] %>
 </p>
 
-<%= form_tag login_path do %>
 
-  <%= label_tag :email %>
+<%= form_tag login_path do %>
+ <div class="form-signin">
+<div class="wrap-input100 validate-input">
+    <div class="form-group">
+  <%= label_tag :email%>
   <%= email_field_tag :email %>
+  <span class="focus-input100-1"></span>
+        <span class="focus-input100-2"></span>
+      </div>
+ </div>
 
   <%= label_tag :password %>
   <%= password_field_tag :password %>
+ </div>
+ 	<div class="container-login100-form-btn m-t-20">
+<%= submit_tag "Sign in", :class => "btn btn-lg btn-primary btn-block"  %>
+</div>
+</div>
+            <a href="#" class="text-center new-account">Create an account </a>
 
-  <%= submit_tag "Sign in" %>
+    </div>
+</div>
+</div>
 
 <% end %>

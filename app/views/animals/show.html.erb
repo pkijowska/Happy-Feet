@@ -14,8 +14,11 @@
 </ul>
 
 <!-- <img src="/assets/icons8.png" alt="heart"> -->
-<input type="image" src="/assets/icons8-blue.png" name="heart" class="btTxtfav" id="favForm"/>
-<p id="fav"></p>
+<!-- <input type="image" src="/assets/icons8-blue.png" name="heart" class="btTxtfav" id="favForm"/>
+<p id="fav"></p> -->
+
+<%= button_to 'favourite', animal_favourites_path(@animal), method: :post, :class => "buttonTo"
+      %>
 
 
 
