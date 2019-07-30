@@ -59,21 +59,10 @@ c4 = Category.create :name => 'Cats'
 Favourite.destroy_all
 puts "Creating favourites"
 
-f1 = Favourite.create 
-f2 = Favourite.create
-f3 = Favourite.create
-f4 = Favourite.create
-f5 = Favourite.create
-f6 = Favourite.create
-f7 = Favourite.create
-f8 = Favourite.create
-f9 = Favourite.create
-f10 = Favourite.create
-f11 = Favourite.create
-f12 = Favourite.create
-f13 = Favourite.create
-f14 = Favourite.create
-f15 = Favourite.create
+f1 = Favourite.create :animal_id => a1.id, :user_id => u1.id
+f2 = Favourite.create :animal_id => a2.id, :user_id => u1.id
+f3 = Favourite.create :animal_id => a3.id, :user_id => u2.id
+f4 = Favourite.create :animal_id => a4.id, :user_id => u2.id
 
 #
 #
@@ -87,5 +76,3 @@ c4.animals << a13 << a14 << a15
 
 
 # #users and favourites
-u1.favourites << f1
-u2.favourites  << f1
