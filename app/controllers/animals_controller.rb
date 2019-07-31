@@ -9,6 +9,14 @@ class AnimalsController < ApplicationController
 
 def create
   animal = Animal.create animal_params
+  if params[:file].present?
+      # Then call Cloudinary's upload method, passing in the file in params
+      req = Cloudinary::Uploader.upload(params[:file])
+      # Using the public_id allows us to use Cloudinary's powerful image
+      # transformation methods.
+      animal.image = req["public_id"]
+      animal.save
+    end
   redirect_to animal
 end
 
@@ -18,7 +26,12 @@ end
 
   def update
     animal = Animal.find parms[:id]
+    if params[:file].present?
+      req = Cloudinary::Uploader.upload(params[:file])
+      animal.image = req["public_id"]
+    end
     animal.update animal_params
+    animal.save
     redirect_to animal
 end
 

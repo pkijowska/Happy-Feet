@@ -2,7 +2,7 @@
 
 <h1> <%= @animal.name %></h1>
 
-<%= image_tag @animal.image, :alt => @animal.name, :class => 'feature'  %>
+<%= cl_image_tag @animal.image, :alt => @animal.name, :class => 'feature'  %>
 
 <ul>
 
@@ -17,10 +17,19 @@
 <!-- <input type="image" src="/assets/icons8-blue.png" name="heart" class="btTxtfav" id="favForm"/>
 <p id="fav"></p> -->
 
-<%= button_to 'favourite', animal_favourites_path(@animal), method: :post, :class => "buttonTo"
-      %>
 
 
+<%= button_to 'favourite', animal_favourites_path(@animal), method: :post, :class => "buttonTo"%>
+
+<% if @current_user.present?  %>
+<% pre_favourite = @animal.favourites.find {|favourite| favourite.user_id  == @current_user.id} %>
+<% if pre_favourite  %>
+<%= button_to 'unfavourite', animal_favourite_path(@animal, pre_favourite), method: :delete%>
+
+
+<% end  %>
+
+<% end %>
 
 <div class="controls">
 <%= link_to "Edit animals", edit_animal_path(@animal)  %>
