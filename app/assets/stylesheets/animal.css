@@ -1,4 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+ul {
+  list-style-type: none;
+}
 
 .form-signin
 {
@@ -76,20 +80,244 @@
     margin-top: 10px;
 }
 
-/* body {
+ /* {
 
-background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(http://www.itaniumsolutions.org/pics/max/4/47414_dog-paw-wallpaper.jpg)
+background:  url(/assets/paws.jpg)
     center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
-  color: white;
-  font-family: 'Abel', sans-serif;
+  color: brown;
+
 
 } */
 
+
+
+
+img {
+
+  padding-left: 50px;
+  padding-bottom: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .thumb {
-height: 150px;
+height: 250px;
+width: 240px;
+/* border-radius: 40px; */
+
+}
+
+.feature_animal{
+border-radius: 60px;
+max-width: 350px;
+max-height: 350px;
+
+}
+.move_category {
+  font-weight: bolder;
+  color: pink;
+text-decoration: underline;:
+}
+
+/* a{
+  color: pink;
+
+} */
+
+
+
+.container {
+
+line-height: 3em;
+
+}
+
+.anima_text {
+  /* text-transform: uppercase; */
+  font-size: 110px;
+  font-weight: 900;
+  /* text-align: center; */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdN_RTRhea3Q2yRcB_zEQVQ7KDWE559aMymPIDlMbXwn-4BKV");
+  background-size: 100% 100%;
+  color:transparent;
+  -webkit-background-clip:text;
+  -ms-background-clip:text;
+  -moz-background-clip:text;
+  letter-spacing: 5px;
+  font-family: 'Indie Flower', cursive;
+  padding-bottom: 35px;
+}
+.categories {
+  text-align: center;
+}
+
+.anim_stories {
+
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+}
+
+.anim_names {
+font-family: 'Caveat', cursive;
+font-size: 46px;
+font-weight: bolder;
+}
+
+
+#myFooter {
+    background-color: #182c39;
+    color: white;
+    padding-top: 20px;
+}
+
+#map-container {
+    height: 120px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .container {
+    width: auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+#myFooter .fa {
+    font-size: 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    color: #182c39;
+    border-radius: 51%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#myFooter .fa-facebook:hover {
+    color: #2b55ff;
+}
+
+#myFooter .fa-facebook:focus {
+    color: #2b55ff;
+}
+
+#myFooter .fa-google-plus:hover {
+    color: red;
+}
+
+#myFooter .fa-google-plus:focus {
+    color: red;
+}
+
+#myFooter .fa-twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .fa-twitter:focus {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+    background-color: #faf0e6;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   /* min-height: 200px; */
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+.gifs  {
+height: 170px;
+width: 250px;
+object-fit: cover;
+object-position: center;
+}
+
+.user_animals {
+max-height: 300px;
+max-width: 400px;
 
 }

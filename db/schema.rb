@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_07_29_054834) do
   create_table "categories", force: :cascade do |t|
     t.text "name"
     t.integer "animal_id"
+    t.text "img"
   end
 
   create_table "favourites", force: :cascade do |t|

@@ -1,16 +1,21 @@
-<h1> Our animals </h1>
 
-<h1> <%= @animal.name %></h1>
+<div class="container">
+<h1 class="anima_text"> Meet: </h1>
+<div class="row">
+    <div class="col-md-offset-1 col-md-5">
+<h1 class="anim_names"> <%= @animal.name %></h1>
 
-<%= cl_image_tag @animal.image, :alt => @animal.name, :class => 'feature'  %>
-
+<%= cl_image_tag @animal.image, :alt => @animal.name, :class => 'feature_animal'  %>
+</div>
+</div>
 <ul>
 
-  <% if @animal.category.present? %>
-  <li> See other <%= link_to @animal.category.name, @animal.category %> </li>
-<% end %>
-   <li>Age: <%= @animal.age  %> </li>
-   <li>Her story: <%= @animal.story  %></li>
+
+   <li class="anim_stories">Age: <%= @animal.age  %> </li>
+   <li class="anim_stories"> <%= @animal.story  %></li>
+   <% if @animal.category.present? %>
+   <li class="anim_stories" class="move_category"> Click to see other <%= link_to @animal.category.name, @animal.category, :class=> "rounded mx-auto d-block" %> </li>
+ <% end %>
 </ul>
 
 <!-- <img src="/assets/icons8.png" alt="heart"> -->
@@ -36,5 +41,5 @@
   <%= link_to "Delete animal", @animal, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
 
 
-
+</div>
 </div>

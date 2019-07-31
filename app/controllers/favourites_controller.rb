@@ -28,8 +28,8 @@ def destroy
 end
 
 def already_favourite?
-@favourite = Favourite.where(user_id: @current_user.id, animal_id: params[:animal_id])
-@favourite
+  @favourite = Favourite.where(user_id: @current_user.id, animal_id: params[:animal_id])
+  @favourite.size > 0
 end
 
 

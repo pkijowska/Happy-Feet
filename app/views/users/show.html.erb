@@ -8,7 +8,7 @@ Hello
 <h1>These are your favourites ...</h1>
 
 <% @favourites.each do |f| %>
-<%= image_tag f.image %>
+<%= image_tag f.image, :class => 'user_animals' %>
 
 <% end %>
 

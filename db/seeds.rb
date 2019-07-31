@@ -52,10 +52,10 @@ a15 = Animal.create :name => 'Vanessa', :age => 4, :image => '/assets/cutecat.jp
 Category.destroy_all
 puts "Creating categories"
 
-c1 = Category.create :name => 'Pigs'
-c2 = Category.create :name => 'Hamsters'
-c3 = Category.create :name => 'Dogs'
-c4 = Category.create :name => 'Cats'
+c1 = Category.create :name => 'Pigs', :img => 'https://media.giphy.com/media/F4F9JPh0ZbVok/giphy.gif'
+c2 = Category.create :name => 'Hamsters', :img => 'https://media.giphy.com/media/P4EO3u0apt3PO/giphy.gif'
+c3 = Category.create :name => 'Dogs', :img => 'https://media.giphy.com/media/kiBcwEXegBTACmVOnE/giphy.gif'
+c4 = Category.create :name => 'Cats', :img => 'https://media.giphy.com/media/B6odR0DhsStfW/giphy.gif'
 
 Favourite.destroy_all
 puts "Creating favourites"
