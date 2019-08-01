@@ -3,9 +3,11 @@
 <h1 class="anima_text animated slideInDown">Our animals</h1>
 
   <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-7 mx-auto">
 
 <!-- <h1 class="anima_text">All Animals</h1> -->
+
+
 
 <% @animals.each do |animal| %>
 <%= link_to cl_image_tag(animal.image), animal, :class => "meet_anim" %>

@@ -15,6 +15,7 @@
    <li class="anim_stories"> <%= @animal.story  %></li>
    <% if @animal.category.present? %>
    <li class="anim_stories" class="move_category"> Click to see other <%= link_to @animal.category.name, @animal.category%> </li>
+   <div class="anim_names">Are you interested in adopting <%= @animal.name %>? Call to book a meeting with us!</div>
  <% end %>
 </ul>
 

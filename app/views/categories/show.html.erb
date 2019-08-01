@@ -1,7 +1,8 @@
 <div class="container">
   <h1 class="anima_text categories"> <%= @category.name %></h1>
   <div class="row">
-      <div class="col-md-offset-3 col-md-6">
+    <div class="col-md-7 mx-auto text-center">
+
 
 <% @category.animals.each do |animal| %>
   <%= link_to image_tag(animal.image, :class => 'thumb'), animal %>

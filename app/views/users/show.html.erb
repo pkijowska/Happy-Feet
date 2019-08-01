@@ -1,20 +1,24 @@
-
-Hello
-<%= @user.name %>
-
-<p>Please see your account's details here: </p>
+<div class="container">
+<h1 class="anim_stories">Hello <%= @user.name %></h2>
 
 
-<h1>These are your favourites ...</h1>
+<p class="anim_names">Please see your account's details here: </p>
+
+
+<h1 class="anim_stories">You added these animals to your favourite...</h1>
+
+<div class="row">
+  <div class="col-6 mx-auto text-center">
 
 <% @favourites.each do |f| %>
 <%= link_to image_tag(f.image, :class => 'no'), f %>
 
 
+
 <% end %>
-
-
-
+</div>
+</div>
+</div>
 
 <div class="content">
 </div>
