@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import 'animate';
 ul {
   list-style-type: none;
 }
@@ -96,19 +97,21 @@ background:  url(/assets/paws.jpg)
 
 
 
-img {
 
-  padding-left: 50px;
-  padding-bottom: 50px;
-  object-fit: cover;
-  object-position: center;
-}
+
 
 .thumb {
 height: 250px;
 width: 240px;
 /* border-radius: 40px; */
 
+}
+
+.meet_anim {
+
+max-width: 250px;
+max-height: 200px;
+padding-left: 40px;
 }
 
 .feature_animal{
@@ -123,16 +126,12 @@ max-height: 350px;
 text-decoration: underline;
 }
 
-/* a{
-  color: pink;
-
-} */
-
 
 
 .container {
-
+background-color:rgba(234, 247, 251, 0.6);
 line-height: 3em;
+padding-bottom: 20px;
 
 }
 
@@ -140,8 +139,8 @@ line-height: 3em;
   /* text-transform: uppercase; */
   font-size: 110px;
   font-weight: 900;
-  /* text-align: center; */
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdN_RTRhea3Q2yRcB_zEQVQ7KDWE559aMymPIDlMbXwn-4BKV");
+  text-align: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmOxD7y6_qTN1hCAxDzNs5_5X8o2I9xihkr934gK8S0bZMGOFv");
   background-size: 100% 100%;
   color:transparent;
   -webkit-background-clip:text;
@@ -150,6 +149,7 @@ line-height: 3em;
   letter-spacing: 5px;
   font-family: 'Indie Flower', cursive;
   padding-bottom: 35px;
+  margin-top: 30px;
 }
 .categories {
   text-align: center;
@@ -290,7 +290,7 @@ html{
 }
 
 body{
-    display: flex;
+
     display: -webkit-flex;
     flex-direction: column;
     -webkit-flex-direction: column;
@@ -312,12 +312,106 @@ body{
 .gifs  {
 height: 170px;
 width: 250px;
-object-fit: cover;
-object-position: center;
+/* object-fit: cover;
+object-position: center; */
 }
 
 .user_animals {
-max-height: 300px;
-max-width: 400px;
+max-height: 200px;
+max-width: 250px;
+}
+
+.navbar{
+  background-color: #182c39 !important;
+}
+
+.nav-cat {
+
+    border-style: none;
+    text-align: center;
+    /* margin:-60px 0 0 -60px; */
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+
+.button:hover {
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAMAAADhRa4NAAAAnFBMVEUAAAD/////gID/QID/M2b/K1XfQGDjOVXbJFXYJ1jbJFfbJFXXIlXXJFXYJFfWI1XXIlbWIlTXIlXXIlbXIlXXI1TWIVXXIVTXIVbYIlbWIlTWIVXXIVTXIVXWIlTXIVXXIVTWIlXWIlXXIlXXIlXXIVTWIVTWIVXXIlXXIVTWIVXXIlXXIlTWIVXXIVXXIVXWIlXXIVXXIVTWIVRPqBsLAAAAM3RSTlMAAQIEBQYICRUaIyotOU9RWWp4gIGFipGSlZeiqrG2uLm7yczZ3eDn6+zt8fL09vf6/f6BeCKOAAAAxUlEQVQYGX3BiRaBUBQF0KOIIhEyFRIZMp///zcpq/Wi7t74sCbR5Rb7fQ0Zre/Ht0s0sZDTvQdzURepbsTcw9ORaq1ZOFiAdWBh3QIwp2Jvmnsq5kDvRVWSUPXqYUHRAjuKdrhSdEVCUYItRVu4FLnonCk4d4ABBQOkPNby8KH5rOFryDRXrLRq4qsdskLYRsHY8M/GgMII+CMwUKIvWbLU8aMxo2LawL8RCyNUGj6ZeQ5Rw7kzdXdQyz6RRxsCczw2UfIGQMZtHdWqctsAAAAASUVORK5CYII=") 16 13, auto;
+}
+
+
+.button {
+  font-family: Arial;
+  font-size: 18px;
+  color: white;
+  background: red;
+  border: none;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: box-shadow 0.05s ease-in-out;
+  box-shadow: 0 0 0 0 var(--color-black);
+  opacity: 0.6;
+  border-radius: 100px;
+  display: inline-block;
 
 }
+
+.button:hover,
+.button:focus {
+box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+}
+
+.button:active {
+  background: black;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  cursor: default;
+}
+
+
+#test:hover {
+  cursor: url("/assets/broken.png"), auto;
+}
+
+
+.buttonUnfav {
+  font-family: Arial;
+  font-size: 16px;
+  color: white;
+  background: black;
+  border: none;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: box-shadow 0.05s ease-in-out;
+  box-shadow: 0 0 0 0 var(--color-black);
+  opacity: 0.6;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.buttonUnfav:hover,
+.buttonUnfav:focus {
+box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+}
+
+.buttonUnfav:active {
+  background: black;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  cursor: default;
+}
+
+
+.button, .button1 {
+display: inline-flex;
+}
+
+
+
+/* Custom button styling you do not need to get the heart */

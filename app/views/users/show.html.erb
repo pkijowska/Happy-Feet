@@ -8,9 +8,63 @@ Hello
 <h1>These are your favourites ...</h1>
 
 <% @favourites.each do |f| %>
-<%= image_tag f.image, :class => 'user_animals' %>
+<%= link_to image_tag(f.image, :class => 'no'), f %>
+
 
 <% end %>
 
 
-<%# button to unfavourite %>
+
+
+<div class="content">
+</div>
+    <footer id="myFooter">
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <iframe id="map-container" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d9324800.564532317!2d-4.436619274153476!3d55.20840812097229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUK!3m2!1d55.378051!2d-3.4359729999999997!4m5!1s0x4652524a593764e1%3A0xef41abc2014c0424!2sHappy+Feet+Studio%2C+Copenhagen+NV%2C+Denmark!3m2!1d55.700316!2d12.533009!5e0!3m2!1sen!2sau!4v1564572495525!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+        <!-- </div> -->
+        <div class="social-networks">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2016 Happy Feet Studio</p>
+        </div>
+    </footer>

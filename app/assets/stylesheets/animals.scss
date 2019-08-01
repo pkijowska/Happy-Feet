@@ -1,3 +1,27 @@
 // Place all the styles related to the Animals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+img {
+
+  border-radius: 120px;
+  width: 200px;
+  height: 160px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  
+}
+
+
+body {
+
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("/assets/paws.jpg")
+
+   center no-repeat fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -ms-background-size: cover;
+ background-size: cover;
+ color: black;
+}

@@ -16,6 +16,7 @@ end
 def show
   @user = @current_user
   @favourites = @user.animals
+
 end
 
 def create
