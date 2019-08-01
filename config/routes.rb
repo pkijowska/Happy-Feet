@@ -45,7 +45,7 @@
 Rails.application.routes.draw do
 
 
-root :to => 'pages#home'
+root :to => 'animals#index'
 resources :users, :only => [:new, :create, :update, :index]
 get '/users/edit' => 'users#edit', :as => :edit_user
 get '/login' => 'session#new'
