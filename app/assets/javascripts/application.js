@@ -12,19 +12,5 @@
 //
 //= require rails-ujs
 //= require jquery
-//= require bootstrap-sprockets
 //= require bootstrap
-//= require turbolinks
 //= require_tree .
-$(document).ready(function() {
-$('.buttonTo').click(function () {
- $('.buttonTo').css("background-color", "red");
-$(".buttonTo").addClass("disabled", true);
-// });
-// $('.buttonTo').on('click', function() {
-//   if($(this).hasClass(':disabled => true'))
-//     return;
-//   // do work
-//   $(this).addClass('disabled => true');
-});
-});
