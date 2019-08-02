@@ -1,24 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tools and technologies
+* Rails
+* Css animated gem
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+![alt text](future1.png)
 
-* Database initialization
+![alt text](future2.png)
 
-* How to run the test suite
+<!-- ![Repo img](/tictactoe/tictactoe.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title") -->
 
-* Deployment instructions
+## Features
 
-* ...
+
+
+
+## Bugs
+
+
+## TODO List
+1. Another table - for payments and donate button
+1. Add more animals
+
+
+## Technologies
+- Made with rails
+- Used animate css
+
+
+
+## Thank you
+
+1. Rashida and Joel for helping me several times when I got stuck
+1. All my classmates for their help and insights
+1. Gopi for supporting me in my project
