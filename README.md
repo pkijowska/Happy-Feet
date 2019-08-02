@@ -8,11 +8,11 @@
 
 
 
-![alt text](future1.png)
+![alt text](assets/future1.png)
 
 ![alt text](future2.png)
 
-<!-- ![Repo img](/tictactoe/tictactoe.png)
+![Repo img](/assets/future2.png)
 
 ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title") -->
 
