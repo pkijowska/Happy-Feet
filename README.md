@@ -14,7 +14,7 @@
 
 ![Repo img](/assets/future2.png)
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title") -->
+![Alt text](future2.png?raw=true "Optional Title") -->
 
 ## Features
 
