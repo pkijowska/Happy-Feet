@@ -7,14 +7,8 @@
 
 
 
+[click to access the project1](https://animalshelter1.herokuapp.com/)
 
-![alt text](assets/future1.png)
-
-![alt text](future2.png)
-
-![Repo img](/assets/future2.png)
-
-![Alt text](future2.png?raw=true "Optional Title") -->
 
 ## Features
 
