@@ -1,5 +1,3 @@
-# README
-
 
 ## The problem
 I love animals. I wanted to make a website that will allow the users to adopt an animal. For now, the user is able to login and sign up and able to browse animals and add them to their favourites.
@@ -8,11 +6,10 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 ## Tools and technologies
 * Ruby on rails
 * Css
+* Used Animate CSS - for favourite button and h1
 * Bootstrap - for the responsive menu bar
 * Cloudinary - image hosting
 * Heroku - hosting
-
-
 
 
 [click to access the project1](https://animalshelter1.herokuapp.com/)
@@ -29,6 +26,8 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 ![alt text](/app/assets/images/signup.png)
 
 - [x] LOG IN
+
+
 ![alt text](/app/assets/images/login.png)
 
 - [x] BROWSING ANIMALS:
@@ -43,7 +42,14 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 
 ![alt text](/app/assets/images/category.png)
 
+- [x] ADD TO FAVOURITES AND SEE THE FAVOURITE ANIMALS:
+
+![alt text](/app/assets/images/favanimals.png)
+
+
 ## Bugs
+1. Cloudinary doesnt work properly
+1. Unable to edit animals
 
 
 ## TODO List
@@ -51,10 +57,6 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 1. Add more animals
 1. Add more gems
 
-
-## Technologies
-- Made with rails
-- Used animate css
 
 
 
