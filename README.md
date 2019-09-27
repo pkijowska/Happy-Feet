@@ -18,11 +18,11 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 [click to access the project1](https://animalshelter1.herokuapp.com/)
 
 
-![alt text](app/images/allanimals.png)
+![alt text](app/assets/images/allanimals.png)
 
-![alt text](/app/images/allanimals.png)
+![alt text](/app/assets/images/allanimals.png)
 
-![alt text](./app/images/allanimals.png)
+![alt text](../app/assets/images/allanimals.png)
 
 ## Features
 
