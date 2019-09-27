@@ -18,16 +18,30 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 [click to access the project1](https://animalshelter1.herokuapp.com/)
 
 
-![alt text](app/assets/images/allanimals.png)
-
 ![alt text](/app/assets/images/allanimals.png)
 
-![alt text](../app/assets/images/allanimals.png)
 
 ## Features
 
+- [x] SIGN UP
 
 
+![alt text](/app/assets/images/signup.png)
+
+- [x] LOG IN
+![alt text](/app/assets/images/login.png)
+
+- [x] BROWSING ANIMALS:
+
+![alt text](/app/assets/images/allanimals.png)
+
+- [x] CLICKING ON INDIVIDUAL ANIMALS:
+
+![alt text](/app/assets/images/individualanimals.png)
+
+- [x] CATEGORY VIEW:
+
+![alt text](/app/assets/images/category.png)
 
 ## Bugs
 
@@ -35,6 +49,7 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 ## TODO List
 1. Another table - for payments and donate button
 1. Add more animals
+1. Add more gems
 
 
 ## Technologies
