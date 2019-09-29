@@ -16,9 +16,10 @@
    <li class="anim_stories">Age: <%= @animal.age  %> </li>
    <li class="anim_stories"> <%= @animal.story  %></li>
    <% if @animal.category.present? %>
+   </br>
 
-
-   <li class="anim_stories">Interested in adopting <%= @animal.name %> ? Fill the form below and we will be in touch:</li>
+   <li class="anim_stories">Interested in adopting <%= @animal.name %> ? </li>
+     <li class="anim_stories"> Fill the form below and we will be in touch:</li>
    <form method="POST" class="message_form" action="https://formspree.io/p.kijowska@gmail.com">
    <input type="email" name="email" placeholder="Your email">
    <textarea name="message" placeholder="Test Message"></textarea>

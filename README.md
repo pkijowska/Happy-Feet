@@ -41,7 +41,7 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 
 - [x] CLICKING ON INDIVIDUAL ANIMALS:
 
-![alt text](/app/assets/images/individualanimals.png)
+![alt text](/app/assets/images/santa-paws.png)
 
 - [x] CATEGORY VIEW:
 
