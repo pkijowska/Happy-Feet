@@ -1,6 +1,6 @@
 
 ## The problem
-I love animals. I wanted to make a website that will allow the users to adopt an animal. For now, the user is able to login and sign up and able to browse animals and add them to their favourites.
+I love animals. I wanted to make a website that will allow the users to adopt an animal. For now, the user is able to login and sign up and able to browse animals and add them to their favourites and send the message to the company expressing the interest in adopting an animal.
 
 
 ## Tools and technologies
@@ -16,7 +16,7 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 [click to access the project1](https://animalshelter1.herokuapp.com/)
 
 
-![alt text](/app/assets/images/allanimals.png)
+![alt text](/app/assets/images/myanimals.png)
 
 
 ## Features
@@ -37,7 +37,7 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 
 - [x] BROWSING ANIMALS:
 
-![alt text](/app/assets/images/allanimals.png)
+![alt text](/app/assets/images/myanimals.png)
 
 - [x] CLICKING ON INDIVIDUAL ANIMALS:
 
@@ -47,7 +47,7 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 
 ![alt text](/app/assets/images/category.png)
 
-- [x] ADD TO FAVOURITES AND SEE THE FAVOURITE ANIMALS:
+- [x] ADD TO FAVOURITES AND SEE THE FAVOURITE ANIMALS in YOUR PROFILE:
 
 ![alt text](/app/assets/images/favanimals.png)
 

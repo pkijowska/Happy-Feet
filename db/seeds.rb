@@ -18,7 +18,7 @@ a7 = Animal.create :name => 'Hammie', :age => 3, :image => '/assets/hammie.jpeg'
 a8 = Animal.create :name => 'Santa Paws', :age => 1, :image => '/assets/pomsky.jpeg',:story => "Santa Paws has a special place in the heart of all who have met her.
 She loves to lay totally chilled in your arms, and watch the world while being cuddled by her human."
 a9 = Animal.create :name => 'Woofer', :age => 3, :image => '/assets/morkie.jpeg', :story => "Woofer is an old soul who make some special family complete. He will not push or quarrel with her siblings over food or toys and will wait patiently."
-a10 = Animal.create :name => 'Pickles', :age => 7, :image => '/assets/sheepadoodle.jpeg',:story => "Pickles is a sweet lady that is ready for a calm life of not having to worry about uncertainties."
+a10 = Animal.create :name => 'Pickles', :age => 7, :image => '/assets/pickle.jpg',:story => "Pickles is a sweet lady that is ready for a calm life of not having to worry about uncertainties."
 a11 = Animal.create :name => 'Gary', :age => 6, :image => '/assets/westie.jpeg', :story => "Kids flown the nest? Looking for a lap warmer? Need someone to love and cherish all day? Live a quiet life? Look no further! Gary is here for you."
 a12 = Animal.create :name => 'Toby', :age => 9, :image => '/assets/olddaschund.jpg',:story => "Toby may have short legs but he moves them quick to keep up at playtime with his fur friends."
 a13 = Animal.create :name => 'Lui', :age => 3, :image => '/assets/little.jpg',:story =>"Lui who is still looking for his forever home. He is very talkative and likes to sleep on your feet which is excellent news for someone needing a foot warmer coming into winter!"

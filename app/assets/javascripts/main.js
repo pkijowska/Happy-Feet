@@ -4,9 +4,10 @@ $(".envelope").on("click", function() {
   $("div").removeClass('hidden-modal');
 });
 
-$("span").on("click", function() {
+$(".close_x").on("click", function() {
   $(".modal-style").addClass('hidden-modal');
 });
+$('a[data-toggle="tooltip"]').tooltip();
 
 
   });

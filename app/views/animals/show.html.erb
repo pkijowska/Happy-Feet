@@ -16,12 +16,29 @@
    <li class="anim_stories">Age: <%= @animal.age  %> </li>
    <li class="anim_stories"> <%= @animal.story  %></li>
    <% if @animal.category.present? %>
-   </br>
 
+
+   <div class="button1">
+   <%= button_to 'favourite', animal_favourites_path(@animal), method: :post, :class => "button animated pulse infinite"%>
+   </div>
+   <% if @current_user.present?  %>
+   <% pre_favourite = @animal.favourites.find {|favourite| favourite.user_id  == @current_user.id} %>
+   <% if pre_favourite  %>
+   <div class="button1">
+   <%= button_to 'unfavourite', animal_favourite_path(@animal, pre_favourite), method: :delete, :class => "buttonUnfav"%>
+   </div>
+   </div>
+   </div>
+   <% end  %>
+
+   <% end %>
+
+   <hr>
+   
    <li class="anim_stories">Interested in adopting <%= @animal.name %> ? </li>
      <li class="anim_stories"> Fill the form below and we will be in touch:</li>
    <form method="POST" class="message_form" action="https://formspree.io/p.kijowska@gmail.com">
-   <input type="email" name="email" placeholder="Your email">
+   <input class="show_input" type="email" name="email" placeholder="Your email">
    <textarea name="message" placeholder="Test Message"></textarea>
    <button type="submit">Send</button>
  </form>
@@ -36,20 +53,7 @@
 <p id="fav"></p> -->
 
 
-<div class="button1">
-<%= button_to 'favourite', animal_favourites_path(@animal), method: :post, :class => "button animated pulse infinite"%>
-</div>
-<% if @current_user.present?  %>
-<% pre_favourite = @animal.favourites.find {|favourite| favourite.user_id  == @current_user.id} %>
-<% if pre_favourite  %>
-<div class="button1">
-<%= button_to 'unfavourite', animal_favourite_path(@animal, pre_favourite), method: :delete, :class => "buttonUnfav"%>
-</div>
-</div>
-</div>
-<% end  %>
 
-<% end %>
 
 <div class="controls">
   <% if @current_user.admin?   %>
