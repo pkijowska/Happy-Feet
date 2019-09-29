@@ -10,6 +10,7 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 * Bootstrap - for the responsive menu bar
 * Cloudinary - image hosting
 * Heroku - hosting
+* Formspree - to send the message to the owner of the website
 
 
 [click to access the project1](https://animalshelter1.herokuapp.com/)
@@ -19,6 +20,10 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 
 
 ## Features
+
+- [x] Main page - the description of the website. There is a small interactivity if the user clicks on the wobbling message
+
+![alt text](/app/assets/images/landing_page.png)
 
 - [x] SIGN UP
 
@@ -48,7 +53,7 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 
 
 ## Bugs
-1. Cloudinary doesnt work properly
+1. Cloudinary doesn't work properly
 1. Unable to edit animals
 
 
