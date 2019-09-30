@@ -34,13 +34,13 @@
    <% end %>
 
    <hr>
-   
+
    <li class="anim_stories">Interested in adopting <%= @animal.name %> ? </li>
      <li class="anim_stories"> Fill the form below and we will be in touch:</li>
    <form method="POST" class="message_form" action="https://formspree.io/p.kijowska@gmail.com">
    <input class="show_input" type="email" name="email" placeholder="Your email">
    <textarea name="message" placeholder="Test Message"></textarea>
-   <button type="submit">Send</button>
+   <button class="form-button" type="submit">Send</button>
  </form>
  <% end %>
 

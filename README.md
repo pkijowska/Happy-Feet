@@ -55,13 +55,15 @@ I love animals. I wanted to make a website that will allow the users to adopt an
 ## Bugs
 1. Cloudinary doesn't work properly
 1. Unable to edit animals
+1. When clicking on "favourite" button the form below changes its size
+
 
 
 ## TODO List
 1. Another table - for payments and donate button
 1. Add more animals
 1. Add more gems
-
+1. Fix edit profile bit (it looks ugly)
 
 
 

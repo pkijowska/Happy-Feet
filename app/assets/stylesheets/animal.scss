@@ -104,8 +104,8 @@ background:  url(/assets/paws.jpg)
 .thumb {
 height: 250px;
 width: 240px;
-/* border-radius: 40px; */
-
+border-radius: 40px;
+margin-left: 20px;
 }
 
 
@@ -147,7 +147,7 @@ text-decoration: underline;
 background-color:rgba(234, 247, 251, 0.6);
 line-height: 3em;
 padding-bottom: 20px;
-
+height: 130vh;
 }
 
 .anima_text {
@@ -453,7 +453,7 @@ display: inline-flex;
 }
 
 .cat_blink {
-  top: 231px;
+  top: 280px;
 right: 180px;
 position: absolute;
     height: 133px !important;
@@ -490,6 +490,8 @@ font-size: 25px;
 display: flex;
 flex-direction: column;
 height: 160px;
+width: 55%;
+    margin-top: 30px;
 }
 
 .to_the_right {
